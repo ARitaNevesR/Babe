@@ -232,66 +232,45 @@ button:hover {
 
 /* VIDEOS */
 
-.container {
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 2vw;
-flex-direction: column;
-gap: 1vw;
-}
+@media screen and (max-width: 1000px) {
+  * {
+    font-size: 16px;
+  }
 
-a {
-text-decoration: none;
-color: white;
-font-weight: bold;
-}
+  .container1 {
+    padding: 2vw 5vw; /* Adjust the padding for smaller screens */
+  }
 
-.video-container {
-display: flex;
-flex-wrap: wrap;
-gap: 3vw;
-background-color: black;
-width: 100px;
-height: 100px;
-}
+  .video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
+  }
 
-.video {
-width: 300px;
-height: 400px;
-background-color: #f8bbd0;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-border-radius: 20px;
-transition: transform 0.3s ease-in-out;
-}
+  .video-item {
+    flex: 1 0 calc(33.33% - 3vw); /* Adjust the width of each video item for responsiveness */
+    margin-bottom: 3vw;
+  }
 
-.video:hover {
-transform: scale(1.2);
-background-color: #ff8eb6;
-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+  .img-container {
+    padding: 3vw 2vw 0 2vw;
+    width: 100%; /* Use a percentage-based width for better responsiveness */
+    max-width: 300px; /* Set a maximum width to prevent stretching on larger screens */
+    height: auto;
+  }
 
+  .video-text h1 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
 
-.img img {
-padding: 2vw 2vw 0 2vw;
-width:85%;
-height: auto;
-}
+  .bottom h1 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+    color: grey;
+  }
 
-h1 {
-  font-size: 25px;
-}
-
-.bottom h1{
-  font-size: 25px;
-  color: grey;
-}
-
-.bottom p {
-  font-size: 16px;
+  .bottom p {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
 }
 
 /* VIDEOS SEPARADORES */
